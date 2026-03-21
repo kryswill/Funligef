@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import NewsPage from './pages/NewsPage'
 import MultimediaPage from './pages/MultimediaPage'
+import BiographyPage from './pages/BiographyPage'
 import './App.css'
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
             <Route path="/multimedia" element={<MultimediaPage />} />
             <Route path="/agenda" element={<div className="p-8"><h1 className="text-3xl font-bold">Agenda - En construcción</h1></div>} />
             <Route path="/centers" element={<div className="p-8"><h1 className="text-3xl font-bold">Centros de Estudio - En construcción</h1></div>} />
-            <Route path="/biography" element={<div className="p-8"><h1 className="text-3xl font-bold">Iniciativas - En construcción</h1></div>} />
+            <Route path="/biography" element={<BiographyPage />} />
             <Route path="/resources" element={<div className="p-8"><h1 className="text-3xl font-bold">Recursos - En construcción</h1></div>} />
           </Routes>
         </main>

@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 m-2">
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
@@ -39,14 +39,14 @@ const Header = () => {
             >
               Funligef
             </Link>
-            {/* <Link 
-              to="/news" 
+            <Link 
+              to="/biography" 
               className={`px-3 py-2 text-sm font-medium ${
-                isActive('/news') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
+                isActive('/biography') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
               }`}
             >
-              Noticias
-            </Link> */}
+              Biografía
+            </Link>
             {/* <Link 
               to="/multimedia" 
               className={`px-3 py-2 text-sm font-medium ${
@@ -71,14 +71,6 @@ const Header = () => {
             >
               Centros de Estudio
             </Link> */}
-            <Link 
-              to="/biography" 
-              className={`px-3 py-2 text-sm font-medium ${
-                isActive('/biography') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
-              }`}
-            >
-              Biografia
-            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -121,7 +113,7 @@ const Header = () => {
             >
               Funligef
             </Link>
-            {/* <Link 
+            <Link 
               to="/news" 
               className={`block px-3 py-2 text-base font-medium ${
                 isActive('/news') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
@@ -129,17 +121,17 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Noticias
-              </Link> */}
-              {/* <Link 
-                to="/multimedia" 
-                className={`block px-3 py-2 text-base font-medium ${
-                  isActive('/multimedia') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
-                }`}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Multimedia
-              </Link> */}
-            {/* <Link 
+            </Link>
+            <Link 
+              to="/multimedia" 
+              className={`block px-3 py-2 text-base font-medium ${
+                isActive('/multimedia') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Multimedia
+            </Link>
+            <Link 
               to="/agenda" 
               className={`block px-3 py-2 text-base font-medium ${
                 isActive('/agenda') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
@@ -147,8 +139,8 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Agenda
-            </Link> */}
-            {/* <Link 
+            </Link>
+            <Link 
               to="/centers" 
               className={`block px-3 py-2 text-base font-medium ${
                 isActive('/centers') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
@@ -156,7 +148,7 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Centros de Estudio
-            </Link> */}
+            </Link>
             <Link 
               to="/biography" 
               className={`block px-3 py-2 text-base font-medium ${
@@ -164,7 +156,7 @@ const Header = () => {
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Biografia
+              Biografía
             </Link>
           </div>
         </div>
