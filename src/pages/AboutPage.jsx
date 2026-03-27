@@ -6,7 +6,7 @@ const AboutPage = () => {
     <div className="min-h-screen bg-gray-50">
 
       {/* Hero */}
-      <section className="w-full bg-white py-16 px-6 lg:px-20">
+      <section className="w-full bg-primary-50 py-16 px-6 lg:px-20">
         <h1 className="text-4xl font-bold text-gray-900 text-center">
           Sobre Funligef
         </h1>
@@ -16,7 +16,7 @@ const AboutPage = () => {
       <section className="w-full px-6 lg:px-20 py-16">
         <div className="grid md:grid-cols-2 gap-12">
 
-          <div className="bg-gradient-to-br from-primary-50 to-white p-8 rounded-xl shadow">
+          <div className="bg-white p-8 rounded-xl shadow">
             <h2 className="text-2xl font-semibold text-primary-700 mb-4">
               Nuestra Misión
             </h2>
@@ -33,9 +33,8 @@ const AboutPage = () => {
               Nuestra Visión
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Aspiramos a ser una institución líder en la transformación educativa y ambiental del país,
-              generando impacto positivo a través de programas innovadores, investigación de vanguardia y
-              alianzas estratégicas con organizaciones nacionales e internacionales.
+              Forjar a través de la educación una ciudadanía local responsable con conciencia global, capacitada para proteger 
+              y regenerar el medioambiente, asegurando la sostenibilidad de la vida en la República Dominicana y el planeta.
             </p>
           </div>
 
@@ -62,34 +61,69 @@ const AboutPage = () => {
       </section>
 
       {/* Valores */}
-      <section className="w-full px-6 lg:px-20 py-16">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-10">
-          Nuestros Valores
-        </h2>
+ <section className="w-full px-6 lg:px-20 py-16">
+  <h2 className="text-2xl font-semibold text-gray-800 mb-10">
+    Nuestros Valores
+  </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-primary-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-            <h3 className="text-primary-700 font-semibold mb-2">Educación</h3>
-            <p className="text-gray-600">Creemos en el poder transformador de la educación como herramienta para el desarrollo
-              humano y social.
-            </p>
-          </div>
+  <div className="grid md:grid-cols-3 gap-6">
 
-          <div className="bg-green-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-            <h3 className="text-green-700 font-semibold mb-2">Sostenibilidad</h3>
-            <p className="text-gray-600">Promovemos prácticas que garanticen el equilibrio entre desarrollo económico y
-              protección ambiental.
-            </p>
-          </div>
+    <div className="bg-white p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
+      <h3 className="text-primary-700 font-semibold mb-2">
+        Conciencia Crítica
+      </h3>
+      <p className="text-gray-600">
+       Promovemos una educación que no solo informa, sino que forma ciudadanos capaces de analizar la realidad, cuestionar modelos insostenibles y comprender las complejidades de los desafíos ambientales y sociales....
+      </p>
+    </div>
 
-          <div className="bg-blue-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-            <h3 className="text-blue-700 font-semibold mb-2">Innovación</h3>
-            <p className="text-gray-600">Fomentamos soluciones creativas y tecnológicas para abordar los desafíos
-              sociales y ambientales.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div className="bg-green-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
+      <h3 className="text-green-700 font-semibold mb-2">
+        Integridad Ambiental
+      </h3>
+      <p className="text-gray-600">
+        Actuamos con coherencia. Nuestros proyectos, operaciones internas y alianzas demuestran un compromiso genuino con la sostenibilidad. Predicamos con el ejemplo, minimizando nuestra huella ecológica y maximizando nuestro impacto positivo.
+      </p>
+    </div>
+
+    <div className="bg-blue-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
+      <h3 className="text-blue-700 font-semibold mb-2">
+        Responsabilidad Intergeneracional
+      </h3>
+      <p className="text-gray-600">
+        Reconocemos que nuestras acciones de hoy definen el mundo del mañana. Nos guía la responsabilidad ética de proteger los recursos y la biodiversidad para las futuras generaciones, garantizando su derecho a un ambiente sano....
+      </p>
+    </div>
+
+    <div className="bg-purple-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
+      <h3 className="text-purple-700 font-semibold mb-2">
+        Empoderamiento y Colaboración
+      </h3>
+      <p className="text-gray-600">
+        Creemos que el cambio real ocurre cuando las comunidades son protagonistas. Fomentamos el trabajo en red, el diálogo de saberes (científico, tradicional, local) y la construcción colectiva de soluciones, empoderando a educadores, jóvenes y líderes locales.
+      </p>
+    </div>
+
+    <div className="bg-amber-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
+      <h3 className="text-amber-700 font-semibold mb-2">
+        Optimismo Transformador
+      </h3>
+      <p className="text-gray-600">
+        Partimos de la premisa de que el cambio es posible a través de la educación. Fomentamos la esperanza que nace de la educación para la acción, celebrando los logros, escalando soluciones prácticas e inspirando a otros a sumarse con energía y determinación.
+      </p>
+    </div>
+
+    <div className="bg-rose-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
+      <h3 className="text-rose-700 font-semibold mb-2">
+        Excelencia y Transparencia
+      </h3>
+      <p className="text-gray-600">
+        Nos comprometemos con la más alta calidad en nuestros programas educativos y de conservación. Gestionamos los recursos con honestidad, transparencia y rigor, rindiendo cuentas a las comunidades, donantes y aliados que confían en nuestra labor.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       {/* Áreas */}
       <section className="w-full bg-white px-6 lg:px-20 py-16">
@@ -98,7 +132,7 @@ const AboutPage = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-gray-50 p-4 rounded-lg">Educación ambiental y sostenibilidad</div>
+          <div className="bg-gray-50 p-4 rounded-lg">Educación y sostenibilidad</div>
           <div className="bg-gray-50 p-4 rounded-lg">Investigación y desarrollo de políticas públicas</div>
           <div className="bg-gray-50 p-4 rounded-lg">Capacitación técnica y profesional</div>
           <div className="bg-gray-50 p-4 rounded-lg">Conservación de ecosistemas</div>
