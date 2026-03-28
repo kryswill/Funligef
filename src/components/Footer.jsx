@@ -14,13 +14,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Enlaces</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><Link to="/resources" className="hover:text-white">Revista Global</Link></li>
-              <li><Link to="/resources" className="hover:text-white">Publicaciones</Link></li>
-              <li><Link to="/resources" className="hover:text-white">Biblioteca</Link></li>
-              <li><Link to="/resources" className="hover:text-white">Diccionario</Link></li>
+              <li><Link to="/" className="hover:text-white">Inicio</Link></li>
+              <li><Link to="/about" className="hover:text-white">Sobre Nosotros</Link></li>
+              <li><Link to="/biography" className="hover:text-white">Biografía</Link></li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-4">Síguenos</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
@@ -44,13 +43,11 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-          </div>
+          </div> */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <p className="text-sm text-gray-400">
-              Santo Domingo, República Dominicana<br />
-              Tel: +1 (809) 123-4567<br />
-              Email: info@funligef.org
+              Email: funpligef@gmail.com
             </p>
           </div>
         </div>
