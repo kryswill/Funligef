@@ -5,8 +5,6 @@ import LanguageSelector from './components/LanguageSelector'
 import { LanguageProvider } from './contexts/LanguageContext'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
-import NewsPage from './pages/NewsPage'
-import MultimediaPage from './pages/MultimediaPage'
 import BiographyPage from './pages/BiographyPage'
 import './App.css'
 
@@ -21,8 +19,6 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/news" element={<NewsPage />} />
-              <Route path="/multimedia" element={<MultimediaPage />} />
               <Route path="/biography" element={<BiographyPage />} />
               <Route path="/agenda" element={<div>Agenda Page - Coming Soon</div>} />
               <Route path="/centers" element={<div>Centers Page - Coming Soon</div>} />

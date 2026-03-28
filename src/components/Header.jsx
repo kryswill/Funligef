@@ -37,7 +37,7 @@ const Header = () => {
                 isActive('/about') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
               }`}
             >
-              Funligef
+              Funpligef
             </Link>
             <Link 
               to="/biography" 

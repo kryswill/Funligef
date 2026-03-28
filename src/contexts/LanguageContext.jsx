@@ -26,8 +26,7 @@ const translations = {
       loading: 'Loading news...',
       noNews: 'No news available at this time.',
       tryLater: 'Try refreshing the page later.',
-      showing: 'Showing the latest {count} news about education and environment',
-      seeAllCategories: 'To see all categories, visit the News section'
+      showing: 'Latest news about education and environment'
     },
     // AboutPage
     about: {
@@ -91,8 +90,7 @@ const translations = {
       loading: 'Cargando noticias...',
       noNews: 'No hay noticias disponibles en este momento.',
       tryLater: 'Intente actualizar la página más tarde.',
-      showing: 'Mostrando las últimas {count} noticias sobre educación y medio ambiente',
-      seeAllCategories: 'Para ver todas las categorías, visite la sección de Noticias'
+      showing: 'Ultimas noticias sobre educación y medio ambiente'
     },
     // AboutPage
     about: {

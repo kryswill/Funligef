@@ -116,7 +116,6 @@ const HomePage = () => {
           {!loading && featuredNews.length > 0 && (
             <div className="mt-8 text-center text-sm text-gray-500">
               <p>{t('news.showing', { count: featuredNews.length })}</p>
-              <p className="mt-1">{t('news.seeAllCategories')}</p>
             </div>
           )}
         </div>
