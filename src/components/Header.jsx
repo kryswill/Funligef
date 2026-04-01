@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from '../contexts/LanguageContext'
 import logo from '../assets/Logo.png'
 
 const Header = () => {
+  const { t } = useTranslation()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const location = useLocation()
 
@@ -16,7 +18,7 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link to="/">
-                <img src={logo} alt="Funligef Logo" className="h-20 w-auto" />
+                <img src={logo} alt="Funpligef Logo" className="h-20 w-auto" />
               </Link>
             </div>
           </div>
@@ -29,7 +31,7 @@ const Header = () => {
                 isActive('/') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
               }`}
             >
-              Inicio
+              {t('nav.home')}
             </Link>
             <Link 
               to="/about" 
@@ -37,7 +39,7 @@ const Header = () => {
                 isActive('/about') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
               }`}
             >
-              Funpligef
+              {t('nav.about')}
             </Link>
             <Link 
               to="/biography" 
@@ -45,31 +47,39 @@ const Header = () => {
                 isActive('/biography') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
               }`}
             >
-              Biografía
+              {t('nav.biography')}
             </Link>
             {/* <Link 
+              to="/news" 
+              className={`px-3 py-2 text-sm font-medium ${
+                isActive('/news') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
+              }`}
+            >
+              {t('nav.news')}
+            </Link>
+            <Link 
               to="/multimedia" 
               className={`px-3 py-2 text-sm font-medium ${
                 isActive('/multimedia') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
               }`}
             >
-              Multimedia
-            </Link> */}
-            {/* <Link 
+              {t('nav.multimedia')}
+            </Link>
+            <Link 
               to="/agenda" 
               className={`px-3 py-2 text-sm font-medium ${
                 isActive('/agenda') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
               }`}
             >
-              Agenda
-            </Link> */}
-            {/* <Link 
+              {t('nav.agenda')}
+            </Link>
+            <Link 
               to="/centers" 
               className={`px-3 py-2 text-sm font-medium ${
                 isActive('/centers') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
               }`}
             >
-              Centros de Estudio
+              {t('nav.centers')}
             </Link> */}
           </nav>
 
@@ -102,7 +112,7 @@ const Header = () => {
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Inicio
+              {t('nav.home')}
             </Link>
             <Link 
               to="/about" 
@@ -111,43 +121,7 @@ const Header = () => {
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Funligef
-            </Link>
-            <Link 
-              to="/news" 
-              className={`block px-3 py-2 text-base font-medium ${
-                isActive('/news') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
-              }`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Noticias
-            </Link>
-            <Link 
-              to="/multimedia" 
-              className={`block px-3 py-2 text-base font-medium ${
-                isActive('/multimedia') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
-              }`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Multimedia
-            </Link>
-            <Link 
-              to="/agenda" 
-              className={`block px-3 py-2 text-base font-medium ${
-                isActive('/agenda') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
-              }`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Agenda
-            </Link>
-            <Link 
-              to="/centers" 
-              className={`block px-3 py-2 text-base font-medium ${
-                isActive('/centers') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
-              }`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Centros de Estudio
+              {t('nav.about')}
             </Link>
             <Link 
               to="/biography" 
@@ -156,8 +130,44 @@ const Header = () => {
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Biografía
+              {t('nav.biography')}
             </Link>
+            {/* <Link 
+              to="/news" 
+              className={`block px-3 py-2 text-base font-medium ${
+                isActive('/news') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.news')}
+            </Link>
+            <Link 
+              to="/multimedia" 
+              className={`block px-3 py-2 text-base font-medium ${
+                isActive('/multimedia') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.multimedia')}
+            </Link>
+            <Link 
+              to="/agenda" 
+              className={`block px-3 py-2 text-base font-medium ${
+                isActive('/agenda') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.agenda')}
+            </Link>
+            <Link 
+              to="/centers" 
+              className={`block px-3 py-2 text-base font-medium ${
+                isActive('/centers') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.centers')}
+            </Link> */}
           </div>
         </div>
       )}

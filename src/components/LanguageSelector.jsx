@@ -4,8 +4,8 @@ const LanguageSelector = () => {
   const { language, setLanguage } = useTranslation()
 
   const languages = [
-    { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'en', name: 'English', flag: '🇺🇸' }
+    { code: 'es', name: 'Español', flag: '🇪🇸', short: 'ES' },
+    { code: 'en', name: 'English', flag: '🇺🇸', short: 'EN' }
   ]
 
   return (
@@ -19,7 +19,7 @@ const LanguageSelector = () => {
         >
           {languages.map((lang) => (
             <option key={lang.code} value={lang.code}>
-              {lang.name}
+              {lang.short}
             </option>
           ))}
         </select>

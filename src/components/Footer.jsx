@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -12,11 +15,11 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Enlaces</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.links')}</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><Link to="/" className="hover:text-white">Inicio</Link></li>
-              <li><Link to="/about" className="hover:text-white">Sobre Nosotros</Link></li>
-              <li><Link to="/biography" className="hover:text-white">Biografía</Link></li>
+              <li><Link to="/" className="hover:text-white">{t('nav.home')}</Link></li>
+              <li><Link to="/about" className="hover:text-white">{t('nav.about')}</Link></li>
+              <li><Link to="/biography" className="hover:text-white">{t('nav.biography')}</Link></li>
             </ul>
           </div>
           {/* <div>
@@ -45,14 +48,14 @@ const Footer = () => {
             </div>
           </div> */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contacto</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.contact')}</h4>
             <p className="text-sm text-gray-400">
-              Email: funpligef@gmail.com
+              {t('footer.contactEmail')}
             </p>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
-          <p>&copy; 2026 Fundación P. Lisendra Germosen Fondeur. Todos los derechos reservados.</p>
+          <p>{t('footer.copyright')}</p>
         </div>
       </div>
     </footer>

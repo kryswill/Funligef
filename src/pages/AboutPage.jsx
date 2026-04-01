@@ -1,171 +1,140 @@
 import santiago_img from '../assets/santiago_img.jpeg'
 import abril_img from '../assets/abril_img.jpeg'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const AboutPage = () => {
+  const { t } = useTranslation()
+  const values = Object.values(t('about.valuesList'))
+
   return (
     <div className="min-h-screen bg-gray-50">
 
       {/* Hero */}
-      <section className="w-full bg-primary-50 py-16 px-6 lg:px-20">
-        <h1 className="text-4xl font-bold text-gray-900 text-center">
-          Sobre Funligef
+      <section className="w-full bg-gradient-to-r from-primary-600 to-primary-400 py-20 px-6 lg:px-20 text-center text-white">
+        <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+          {t('about.title')}
         </h1>
       </section>
 
-      {/* Misión & Visión */}
-      <section className="w-full px-6 lg:px-20 py-16">
-        <div className="grid md:grid-cols-2 gap-12">
+      {/* Mission & Vision */}
+      <section className="w-full px-6 lg:px-20 py-20">
+        <div className="grid md:grid-cols-2 gap-10">
 
-          <div className="bg-white p-8 rounded-xl shadow">
-            <h2 className="text-2xl font-semibold text-primary-700 mb-4">
-              Nuestra Misión
+          <div className="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition border-t-4 border-primary-500">
+            <h2 className="text-2xl font-bold text-primary-700 mb-4">
+              {t('about.mission')}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Fomentar el desarrollo de estrategias y métodos educativos que tiendan a potenciar las capacidades y
-              habilidades de la niñez y la juventud dominicanas, con la finalidad de convertirlas en actores determinantes
-              del desarrollo del país y del diseño, adopción y ejecución de políticas públicas y privadas de estudio,
-              investigación y protección del medio ambiente.
+              {t('about.missionText')}
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl shadow">
-            <h2 className="text-2xl font-semibold text-green-700 mb-4">
-              Nuestra Visión
+          <div className="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+            <h2 className="text-2xl font-bold text-green-700 mb-4">
+              {t('about.vision')}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Forjar a través de la educación una ciudadanía local responsable con conciencia global, capacitada para proteger 
-              y regenerar el medioambiente, asegurando la sostenibilidad de la vida en la República Dominicana y el planeta.
+              {t('about.visionText')}
             </p>
           </div>
 
         </div>
       </section>
 
-      {/* Objetivos */}
-      <section className="w-full bg-white px-6 lg:px-20 py-16">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-8">
-          Nuestros objetivos
+      {/* Objectives */}
+      <section className="w-full bg-white px-6 lg:px-20 py-20">
+        <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+          {t('about.objectives')}
         </h2>
 
-        <div className="bg-gray-50 p-6 rounded-xl">
-          <ul className="space-y-3 text-gray-600">
-            <li className="flex gap-2"><span className="text-primary-600">✔</span>Promover y fomentar las formaciones educativas y medio ambientales de los niños y jovenes
-              de la Republica dominicana sin distincion de religion, color, sexo o afinidad politica.</li>
-            <li className="flex gap-2"><span className="text-primary-600">✔</span>Hacer hincapie en los programas educativos y medio ambientales.</li>
-            <li className="flex gap-2"><span className="text-primary-600">✔</span>Participar en actividades educativas y medio ambientales con el proposito de formar y contribuir
-              a la socializacion positiva de los jovenes en la Republica dominicana.
-            </li>
-            <li className="flex gap-2"><span className="text-primary-600">✔</span>Realizar talleres, cursos, seminarios y diplomados y tantas actividades formativas como fueren necesarias.</li>
+        <div className="max-w-3xl mx-auto bg-gray-50 p-8 rounded-2xl shadow-sm">
+          <ul className="space-y-4 text-gray-700">
+            {t('about.objectivesList').map((item, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <span className="text-primary-600 text-lg">✔</span>
+                <span>{item}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </section>
 
-      {/* Valores */}
- <section className="w-full px-6 lg:px-20 py-16">
-  <h2 className="text-2xl font-semibold text-gray-800 mb-10">
-    Nuestros Valores
-  </h2>
-
-  <div className="grid md:grid-cols-3 gap-6">
-
-    <div className="bg-white p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-      <h3 className="text-primary-700 font-semibold mb-2">
-        Conciencia Crítica
-      </h3>
-      <p className="text-gray-600">
-       Promovemos una educación que no solo informa, sino que forma ciudadanos capaces de analizar la realidad, cuestionar modelos insostenibles y comprender las complejidades de los desafíos ambientales y sociales....
-      </p>
-    </div>
-
-    <div className="bg-green-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-      <h3 className="text-green-700 font-semibold mb-2">
-        Integridad Ambiental
-      </h3>
-      <p className="text-gray-600">
-        Actuamos con coherencia. Nuestros proyectos, operaciones internas y alianzas demuestran un compromiso genuino con la sostenibilidad. Predicamos con el ejemplo, minimizando nuestra huella ecológica y maximizando nuestro impacto positivo.
-      </p>
-    </div>
-
-    <div className="bg-blue-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-      <h3 className="text-blue-700 font-semibold mb-2">
-        Responsabilidad Intergeneracional
-      </h3>
-      <p className="text-gray-600">
-        Reconocemos que nuestras acciones de hoy definen el mundo del mañana. Nos guía la responsabilidad ética de proteger los recursos y la biodiversidad para las futuras generaciones, garantizando su derecho a un ambiente sano....
-      </p>
-    </div>
-
-    <div className="bg-purple-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-      <h3 className="text-purple-700 font-semibold mb-2">
-        Empoderamiento y Colaboración
-      </h3>
-      <p className="text-gray-600">
-        Creemos que el cambio real ocurre cuando las comunidades son protagonistas. Fomentamos el trabajo en red, el diálogo de saberes (científico, tradicional, local) y la construcción colectiva de soluciones, empoderando a educadores, jóvenes y líderes locales.
-      </p>
-    </div>
-
-    <div className="bg-amber-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-      <h3 className="text-amber-700 font-semibold mb-2">
-        Optimismo Transformador
-      </h3>
-      <p className="text-gray-600">
-        Partimos de la premisa de que el cambio es posible a través de la educación. Fomentamos la esperanza que nace de la educación para la acción, celebrando los logros, escalando soluciones prácticas e inspirando a otros a sumarse con energía y determinación.
-      </p>
-    </div>
-
-    <div className="bg-rose-50 p-6 rounded-xl hover:shadow-md hover:-translate-y-1 transition">
-      <h3 className="text-rose-700 font-semibold mb-2">
-        Excelencia y Transparencia
-      </h3>
-      <p className="text-gray-600">
-        Nos comprometemos con la más alta calidad en nuestros programas educativos y de conservación. Gestionamos los recursos con honestidad, transparencia y rigor, rindiendo cuentas a las comunidades, donantes y aliados que confían en nuestra labor.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-      {/* Áreas */}
-      <section className="w-full bg-white px-6 lg:px-20 py-16">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-8">
-          Áreas de Enfoque
+      {/* Values */}
+      <section className="w-full px-6 lg:px-20 py-20 bg-gray-50">
+        <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
+          {t('about.values')}
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-gray-50 p-4 rounded-lg">Educación y sostenibilidad</div>
-          <div className="bg-gray-50 p-4 rounded-lg">Investigación y desarrollo de políticas públicas</div>
-          <div className="bg-gray-50 p-4 rounded-lg">Capacitación técnica y profesional</div>
-          <div className="bg-gray-50 p-4 rounded-lg">Conservación de ecosistemas</div>
-          <div className="bg-gray-50 p-4 rounded-lg">Desarrollo comunitario sostenible</div>
-          <div className="bg-gray-50 p-4 rounded-lg">Alianzas internacionales para el desarrollo</div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {values.map((value, index) => (
+            <div
+              key={index}
+              className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300"
+            >
+              <h3 className="text-lg font-bold text-primary-700 mb-3">
+                {value.title}
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {value.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Liderazgo */}
-      <section className="w-full px-6 lg:px-20 py-16">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-10 text-center">
-          Nuestro Liderazgo
+      {/* Areas */}
+      <section className="w-full bg-white px-6 lg:px-20 py-20">
+        <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+          {t('about.areas')}
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {t('about.areasList').map((area, index) => (
+            <div
+              key={index}
+              className="bg-gradient-to-br from-primary-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center font-medium text-gray-700"
+            >
+              {area}
+            </div>
+          ))}
+        </div>
+      </section>
 
-          <div className="bg-white p-6 rounded-xl text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-            <img
-              src={santiago_img}
-              className="w-44 h-44 mx-auto rounded-full object-cover object-[50%_25%] mb-4 border-4 border-primary-100"
-            />
-            <h3 className="text-xl font-semibold">Presidente</h3>
-            <p className="text-primary-600">SANTIAGO VALVERDE</p>
-          </div>
+      {/* Leadership */}
+      <section className="w-full px-6 lg:px-20 py-20 bg-gray-50">
+        <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
+          {t('about.leadership')}
+        </h2>
 
-          <div className="bg-white p-6 rounded-xl text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-            <img
-              src={abril_img}
-              className="w-44 h-44 mx-auto rounded-full object-cover object-[50%_25%] mb-4 border-4 border-primary-100"
-            />
-            <h3 className="text-xl font-semibold">Directora Ejecutiva</h3>
-            <p className="text-primary-600">ABRIL VALVERDE</p>
-          </div>
+        <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+
+          {[{
+            img: santiago_img,
+            name: 'SANTIAGO VALVERDE',
+            role: t('about.president')
+          },
+          {
+            img: abril_img,
+            name: 'ABRIL VALVERDE',
+            role: t('about.director')
+          }].map((person, index) => (
+            <div
+              key={index}
+              className="bg-white p-8 rounded-2xl text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            >
+              <img
+                src={person.img}
+                alt={person.name}
+                className="w-44 h-44 mx-auto rounded-full object-cover object-[50%_25%] mb-4 border-4 border-primary-10"
+              />
+              <h3 className="text-lg font-semibold text-gray-800">
+                {person.role}
+              </h3>
+              <p className="text-primary-600 font-medium">
+                {person.name}
+              </p>
+            </div>
+          ))}
 
         </div>
       </section>

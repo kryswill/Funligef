@@ -29,7 +29,7 @@ const HomePage = () => {
     { name: "Biblioteca", icon: "📚" },
     { name: "Diccionario", icon: "📝" },
     { name: "GFDD", icon: "🌍" },
-    { name: "Funligef France", icon: "🇫🇷" },
+    { name: "Funpligef France", icon: "🇫🇷" },
     { name: "RD2044", icon: "🎯" }
   ]
 
