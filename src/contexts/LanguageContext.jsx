@@ -8,6 +8,7 @@ const translations = {
       home: 'Home',
       about: 'About Us',
       biography: 'Biography',
+      dictionary: 'Dictionary',
       news: 'News',
       multimedia: 'Multimedia',
       agenda: 'Agenda',
@@ -16,7 +17,7 @@ const translations = {
     },
     // HomePage
     hero: {
-      title: 'Fundación P. Lisendra Germosen Fondeur',
+      title: 'Fundación Prof. Lisendra Germosen Fondeur',
       subtitle: 'For education and the environment',
       learnMore: 'Learn More',
       latestNews: 'Latest News'
@@ -127,6 +128,45 @@ const translations = {
       contactEmail: 'Email: funpligef@gmail.com',
       copyright: '© 2026 Fundación P. Lisendra Germosen Fondeur. All rights reserved.'
     },
+    // DictionaryPage
+    dictionary: {
+      title: 'Dictionary',
+      subtitle: 'Syntropic Agriculture',
+
+      beforeDefinition: 'Before defining syntropic agriculture, it is important to understand syntropy. The term comes from the Greek "syntropia" and refers to the tendency toward organization, integration, and increasing complexity—essentially the opposite of entropy. Developed by Ernst Götsch over more than 40 years in Brazil, syntropic agriculture represents a profound paradigm shift. Rather than relying on fixed recipes, it is based on observing and cooperating with natural processes. As Götsch explains, "we are not the intelligent ones; we are part of an intelligent system." This approach invites us to reclaim a balanced and beneficial role within the living systems that sustain life.',
+
+      definition: 'Syntropic Agriculture',
+      definitionText: 'A regenerative approach to agriculture that works in alignment with natural ecosystems to create highly productive, self-sustaining systems. By mimicking natural succession and maximizing biodiversity, it enhances both ecological health and agricultural output over time.',
+
+      principles: 'Key Principles',
+      principlesList: [
+        'Work with natural succession and ecological processes',
+        'Maximize photosynthesis and biodiversity at all levels',
+        'Design stratified systems that increase resilience and efficiency',
+        'Use pruning and biomass management to accelerate regeneration',
+        'Continuously build and improve soil fertility',
+        'Produce food while restoring and enhancing ecosystems'
+      ],
+
+      benefits: 'Benefits',
+      benefitsList: [
+        'Increased productivity through diversified outputs',
+        'Soil regeneration and improved fertility over time',
+        'Enhanced carbon sequestration and climate mitigation',
+        'Better water retention and reduced need for irrigation',
+        'Greater resilience to climate variability and extreme conditions',
+        'Long-term economic potential through system diversity'
+      ],
+
+      applications: 'Applications',
+      applicationsList: [
+        'Agroforestry and food forest systems',
+        'Regenerative pasture and livestock integration',
+        'Organic and ecological crop production',
+        'Reforestation and ecosystem restoration projects',
+        'Urban, peri-urban, and small-scale farming systems'
+      ]
+    },
     // Common
     common: {
       readMore: 'Read More',
@@ -144,6 +184,7 @@ const translations = {
       home: 'Inicio',
       about: 'Sobre Nosotros',
       biography: 'Biografía',
+      dictionary: 'Diccionario',
       news: 'Noticias',
       multimedia: 'Multimedia',
       agenda: 'Agenda',
@@ -152,7 +193,7 @@ const translations = {
     },
     // HomePage
     hero: {
-      title: 'Fundación P. Lisendra Germosen Fondeur',
+      title: 'Fundación Prof. Lisendra Germosen Fondeur',
       subtitle: 'Por la educación y el medio ambiente',
       learnMore: 'Conócenos',
       latestNews: 'Últimas Noticias'
@@ -262,6 +303,45 @@ const translations = {
       contact: 'Contacto',
       contactEmail: 'Email: funpligef@gmail.com',
       copyright: '© 2026 Fundación P. Lisendra Germosen Fondeur. Todos los derechos reservados.'
+    },
+    // DictionaryPage
+    dictionary: {
+      title: 'Diccionario',
+      subtitle: 'Agricultura Sintrópica',
+
+      beforeDefinition: 'Antes de definir la agricultura sintrópica, es importante entender qué es la sintropía. El término proviene del griego "syntropia" y se refiere a la tendencia hacia la organización, la integración y el aumento de la complejidad, siendo esencialmente lo opuesto a la entropía. Desarrollada por Ernst Götsch durante más de 40 años en Brasil, la agricultura sintrópica representa un cambio profundo de paradigma. En lugar de basarse en recetas fijas, se fundamenta en la observación y la cooperación con los procesos naturales. Como explica Götsch: "no somos los inteligentes; somos parte de un sistema inteligente". Este enfoque nos invita a recuperar un rol equilibrado y beneficioso dentro de los sistemas vivos que sustentan la vida.',
+
+      definition: 'Agricultura Sintrópica',
+      definitionText: 'Un enfoque regenerativo de la agricultura que trabaja en armonía con los ecosistemas naturales para crear sistemas altamente productivos y autosostenibles. Al imitar la sucesión natural y maximizar la biodiversidad, mejora tanto la salud ecológica como la producción agrícola a lo largo del tiempo.',
+
+      principles: 'Principios Clave',
+      principlesList: [
+        'Trabajar con la sucesión natural y los procesos ecológicos',
+        'Maximizar la fotosíntesis y la biodiversidad en todos los niveles',
+        'Diseñar sistemas estratificados que aumenten la resiliencia y eficiencia',
+        'Utilizar la poda y el manejo de biomasa para acelerar la regeneración',
+        'Construir y mejorar continuamente la fertilidad del suelo',
+        'Producir alimentos mientras se restauran y fortalecen los ecosistemas'
+      ],
+
+      benefits: 'Beneficios',
+      benefitsList: [
+        'Mayor productividad a través de sistemas diversificados',
+        'Regeneración del suelo y mejora de la fertilidad con el tiempo',
+        'Mayor captura de carbono y contribución a la mitigación climática',
+        'Mejor retención de agua y menor necesidad de riego',
+        'Mayor resiliencia frente a variabilidad y eventos climáticos extremos',
+        'Potencial económico a largo plazo mediante la diversificación productiva'
+      ],
+
+      applications: 'Aplicaciones',
+      applicationsList: [
+        'Sistemas agroforestales y bosques comestibles',
+        'Manejo regenerativo de pasturas e integración ganadera',
+        'Producción de cultivos orgánicos y ecológicos',
+        'Reforestación y restauración de ecosistemas',
+        'Agricultura urbana, periurbana y a pequeña escala'
+      ]
     },
     // Common
     common: {

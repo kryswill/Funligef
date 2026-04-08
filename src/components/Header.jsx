@@ -42,6 +42,14 @@ const Header = () => {
               {t('nav.about')}
             </Link>
             <Link 
+              to="/dictionary" 
+              className={`px-3 py-2 text-sm font-medium ${
+                isActive('/dictionary') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
+              }`}
+            >
+              {t('nav.dictionary')}
+            </Link>
+            <Link 
               to="/biography" 
               className={`px-3 py-2 text-sm font-medium ${
                 isActive('/biography') ? 'text-gray-900' : 'text-gray-600 hover:text-primary-600'
@@ -122,6 +130,15 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               {t('nav.about')}
+            </Link>
+            <Link 
+              to="/dictionary" 
+              className={`block px-3 py-2 text-base font-medium ${
+                isActive('/dictionary') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.dictionary')}
             </Link>
             <Link 
               to="/biography" 

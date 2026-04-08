@@ -6,6 +6,7 @@ import { LanguageProvider } from './contexts/LanguageContext'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import BiographyPage from './pages/BiographyPage'
+import Dictionary from './pages/Dictionary'
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/biography" element={<BiographyPage />} />
+              <Route path="/dictionary" element={<Dictionary />} />
               <Route path="/agenda" element={<div>Agenda Page - Coming Soon</div>} />
               <Route path="/centers" element={<div>Centers Page - Coming Soon</div>} />
               <Route path="/resources" element={<div>Resources Page - Coming Soon</div>} />
